@@ -25,7 +25,7 @@ public class TaskSubmit4LivyMgrImpl implements BatchMgr {
         String url = "http://172.17.11.170:8998/batches";
 
         String postData = "{\"kind\": \"spark\"}";
-        String pData = "{\"file\":\"hdfs://172.17.11.170:9000/jar/spark-examples-1.6.3-hadoop2.6.0.jar\",\"className\":\"org.apache.spark.examples.SparkPi\", }";
+        String pData = "{\"file\":\"hdfs://172.17.11.170:9000/jar/spark-examples-1.6.3-hadoop2.6.0.jar\",\"className\":\"org.apache.spark.examples.SparkPi\"}";
         String reqResult = ReqEngine.sendPostReq(url, pData);
 //        String reqResult = ReqEngine.sendPostReq(url,postData);
         System.out.println(reqResult);
